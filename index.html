@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MQTT over Websocket</title>
+</head>
+<body>
+        <div class="row">
+            <button onclick="connect()">Connect</button>
+            <button onclick="disconnect()">Disconnect</button><br>
+            <input type= "text" id= "brokerAddressInput" value= "ws://broker.hivemq.com:8000/mqtt">
+        </div><br>
+        <div>
+            <button onclick="publish()">Publish</button><br>
+            <input type= "text" id= "pubTopicInput" value="cloud"><br>
+            <input type= "text" id= "messageInput" value="Hello MQTT"><br>
+        </div><br>
+        <div>
+            <button onclick="subscribe()">Subscribe</button><br>
+            <input type= "text" id= "subTopicInput" value="cloud"><br>
+        </div><br>
+        <ul id='messageOut'></ul>
+</body>
+<script src="mows.js" type="text/javascript"></script>
+<script src="controller.js" type="text/javascript"></script>
+</html>
