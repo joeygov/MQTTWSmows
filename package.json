@@ -1,0 +1,14 @@
+{
+  "name": "mqttwsmows",
+  "version": "1.0.0",
+  "description": "MQTT over Websocket using MOWS",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Jun Rey Ansing",
+  "license": "ISC",
+  "dependencies": {
+    "mows": "0.0.6"
+  }
+}
