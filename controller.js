@@ -26,6 +26,12 @@ function subscribe(){
 	client.subscribe(subTopic);
 };
 
+function unsubscribe(){
+	var unSubTopic = document.getElementById('subTopicInput').value;
+	console.log('Unsubscribe = Topic: '+ unSubTopic);
+	client.unsubscribe(unSubTopic);
+};
+
 function publish(){
 	var pubTopic = document.getElementById('pubTopicInput').value;
 	var message = document.getElementById('messageInput').value;

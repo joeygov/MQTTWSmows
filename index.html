@@ -10,13 +10,14 @@
             <input type= "text" id= "brokerAddressInput" value= "ws://broker.hivemq.com:8000/mqtt">
         </div><br>
         <div>
+            <button onclick="subscribe()">Subscribe</button>
+            <button onclick="unsubscribe()">Unsubscribe</button><br>
+            <input type= "text" id= "subTopicInput" value="cloud"><br>
+        </div><br>
+        <div>
             <button onclick="publish()">Publish</button><br>
             <input type= "text" id= "pubTopicInput" value="cloud"><br>
             <input type= "text" id= "messageInput" value="Hello MQTT"><br>
-        </div><br>
-        <div>
-            <button onclick="subscribe()">Subscribe</button><br>
-            <input type= "text" id= "subTopicInput" value="cloud"><br>
         </div><br>
         <ul id='messageOut'></ul>
 </body>
